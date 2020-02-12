@@ -3,7 +3,7 @@ Little machine for pizza dough proofing analyze
 
 In the learning process of Spring, my intention is to connect this to the worlWideWebb :D 
 
-
+// Saves time, temp, distance (proofing status)
 
 
  <a href="https://ibb.co/0sQNHRN"><img src="https://github.com/SebastianWaltilla/SebastianWaltilla.github.io/blob/master/pizza.jpg?raw=true" alt="Titania-Front" border="0"></a>
