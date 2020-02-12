@@ -1,6 +1,8 @@
 # Arduino-for-fun-Pizzza-logger
 Little machine for pizza dough proofing analyze
 
+In the learning process of Spring, my intention is to connect this to the worlWideWebb :D 
+
 
 
 
