@@ -1,4 +1,4 @@
-
+// Serial.print now ready for parsing in pizzacontroller java app
 
 void setup() 
 {
@@ -6,14 +6,14 @@ void setup()
 }
 void loop() 
 {
+ delay(1000); // slow down serial port 
 
 //---------------------------------------------------------------------------------------------DISTANS
   #define sensor A0 // Sharp IR GP2Y0A41SK0F (4-30cm, analog)
   float volts = analogRead(sensor)*0.0048828125;  // value from sensor * (5/1024)
   float distance = 13*pow(volts, -1); // worked out from datasheet graph
-  Serial.print("  Avstånd  "); 
+  Serial.print("Avstånd;"); 
   Serial.print(distance);   
-  Serial.print(" // "); 
   
 //----------------------------------------------------------------------------------------------- TID
 
@@ -50,11 +50,10 @@ if (hrs1 == 10) {
   hrs10 = hrs10 + 1;
   hrs1 = 0;
 }
-Serial.print("  Tid  ");  
+Serial.print(";Tid;");  
 Serial.print(hrs10); Serial.print(hrs1); Serial.print(":");
 Serial.print(min10); Serial.print(min1); Serial.print(":");
-Serial.print(sec10); Serial.println(sec1);
-Serial.print(" // "); 
+Serial.print(sec10); Serial.print(sec1);
 
 //--------------------------------------------------------------------------------------------- TEMP
 
@@ -65,13 +64,11 @@ Serial.print(" // ");
  voltage /= 1024.0; 
   
  float temperatureC = (voltage - 0.5) * 100; 
- Serial.print("  Temperatur"  );                                      
+ Serial.print(";Temperatur;");                                      
  Serial.print(temperatureC);
- Serial.print(" // ");
+ Serial.println("");
   
  delay(1000); // slow down serial port 
 
 }
 
-
-  
